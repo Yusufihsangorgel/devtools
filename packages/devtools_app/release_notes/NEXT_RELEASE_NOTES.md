@@ -15,7 +15,8 @@ To learn more about DevTools, check out the
 
 ## General updates
 
-TODO: Remove this section if there are not any updates.
+* Fixed a bug where quoted text in the release notes viewer was unreadable in
+  the dark theme.
 
 ## Inspector updates
 
