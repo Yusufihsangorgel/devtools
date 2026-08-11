@@ -182,6 +182,15 @@ class SidePanel extends AnimatedWidget {
                 : Expanded(
                     child: Markdown(
                       data: markdownData!,
+                      // flutter_markdown hard codes a light blue blockquote
+                      // background, which the dark theme's text color is
+                      // unreadable against.
+                      styleSheet: MarkdownStyleSheet(
+                        blockquoteDecoration: BoxDecoration(
+                          color: theme.colorScheme.secondaryContainer,
+                          borderRadius: defaultBorderRadius,
+                        ),
+                      ),
                       onTapLink: (text, url, title) =>
                           unawaited(launchUrlWithErrorHandling(url!)),
                     ),

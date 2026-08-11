@@ -15,7 +15,9 @@ To learn more about DevTools, check out the
 
 ## General updates
 
-TODO: Remove this section if there are not any updates.
+* Fixed a bug where quoted text in the release notes viewer was unreadable in
+  the dark theme.
+  [#10000000001](https://github.com/flutter/devtools/pull/10000000001)
 
 ## Inspector updates
 
